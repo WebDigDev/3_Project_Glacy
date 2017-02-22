@@ -1,0 +1,264 @@
+.catalog {
+	.bread-crumbs {
+		margin-bottom: 10px;
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			li {
+				display: inline-block;
+				vertical-align: top;
+				a {
+					display: block;
+					position: relative;
+					padding-right: 20px;
+
+					color: #fff;font-size: 14px;
+					font-weight: 400;
+					font-size: 14px;
+					&::after {
+						content: "»";
+						position: absolute;
+						right: 5px;
+						top: 0;
+					}
+
+				}
+				&:last-child {
+					a {
+						text-decoration: none;
+						&::after {
+							content: "";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.catalog-form {
+		min-width: 880px;
+		margin-bottom: 40px;
+		h1 {
+			font-size: 35px;
+			font-weight: 700;
+			line-height: 30px;
+			margin: 0 0 5px 0;
+			padding: 0;
+		}
+		fieldset {
+			display: inline-block;
+			vertical-align: top;
+			border: none;
+			padding: 0;
+			margin: 20px 20px 0 0;
+			h3 {
+				font-size: 14px;
+				font-weight: 500;
+				margin: 0 0 5px 15px;
+				padding: 0;
+
+			}
+		}
+	}
+
+	.jq-selectbox__select {
+		background: none;
+		background-color: #a9bab0;
+		color: #fff;
+		border-radius: 50px;
+		padding-right: 0;
+		border: none;
+		box-shadow: none;
+		width: 195px;
+		height: 36px;
+		&:hover {
+			background-color: #fff;
+			color: #000;
+		}
+
+	}
+	.jq-selectbox.focused .jq-selectbox__select {
+		border: none;
+	}
+
+	.jq-selectbox__trigger {
+		border: none;
+	}
+	.jq-selectbox__trigger-arrow{
+		border-top-color: #fff;
+
+	}
+	.jq-selectbox__select-text {
+		text-shadow: none;
+		width: 140px !important;
+		padding-left: 10px;
+		font-weight: 500;
+		font-size: 16px;
+		padding-top: 2px;
+	}
+	.jq-radio {
+		width: 20px;
+		height: 20px;
+		border: 1px solid #fff;
+		box-shadow: none;
+		background: none;
+		background-color: #a9bab0;
+		&:hover {
+			border: 2px solid #fff;
+		}
+	}
+	.jq-radio.checked .jq-radio__div {
+		background: #fff;
+		box-shadow: none;
+		margin: 4px;
+
+	}
+	.jq-radio.focused {
+		border: 1px solid #fff;
+	}
+
+	.catalog-form__radio-box {
+		background-color: #a9bab0;
+		padding: 6px 15px;
+		border-radius: 50px;
+		font-size: 16px;
+		font-weight: 500;
+		label {
+			margin-right: 20px;
+		}
+		label:last-child {
+			margin-right: 0;
+		}
+	}
+	.jq-checkbox {
+		width: 20px;
+		height: 20px;
+		border: 1px solid #fff;
+		border-radius: 4px;
+		background: #a9bab0;
+		box-shadow: none;
+		margin-right: 10px;
+		&:hover {
+			border: 2px solid #fff;
+		}
+
+	}
+	.jq-checkbox.checked .jq-checkbox__div {
+		width: 22px;
+		height: 20px;
+		margin: 0;
+		box-shadow: none;
+		background: url(../img/sprites.png) no-repeat;
+		background-position: -167px -15px ;
+	}
+	.jq-checkbox.focused {
+		border: 1px solid #fff;
+	}
+	.catalog-form__checkbox-box {
+		background-color: #a9bab0;
+		padding: 6px 20px;
+		border-radius: 50px;
+		font-size: 16px;
+		font-weight: 500;
+		margin-right: 5px;
+		label {
+			margin-right: 20px;
+		}
+		label:last-child {
+			margin-right: 0;
+		}
+	}
+	.catalog-form__btn {
+		width: 144px;
+		height: 36px;
+		background-color: rgba(255, 255, 255, 0.19);
+		border: 2px solid white;
+		border-radius: 50px;
+		margin-top: 45px;
+		&:hover {
+			background-color: #fff;
+			color: #000;
+		}
+		&:active {
+			background-color: #fff;
+			color: #000;
+		}
+	}
+	#amount {
+		display: none;
+	}
+	 .ui-slider-horizontal {
+		width: 188px;
+		height: 4px;
+		background-color: #f8f7f4;
+		.ui-slider-handle {
+			width: 20px;
+			height: 20px;
+			background-color: #f8f7f4;
+			box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+			border-radius: 50%;
+			top: -8px;
+			&:focus {
+				outline: none;
+			}
+			&:active {
+				border: none;
+			}
+		}
+	}
+	.catalog-form__range-box {
+		width: 218px;
+		height: 36px;
+		background-color: #a9bab0;
+		padding:  15px;
+		border-radius: 50px;
+	}
+
+	.hit-items__attention {
+		visibility: hidden;
+	}
+	.leaf-page {
+		text-align: right;
+		margin-right: 30px;
+		margin-bottom: 40px;
+		a {
+			display: inline-block;
+			color: #fff;
+			text-decoration: none;
+			font-size: 16px;
+			font-weight: 500;
+			width: 25px;
+			height: 25px;
+			text-align: center;
+			line-height: 25px;
+		}
+		.leaf-page__active {
+			background-color: #fff;
+			color: #000;
+			border-radius: 50%;
+		}
+		.leaf-page__non-active {
+			opacity: 0.2;
+		}
+		a.number {
+			&:hover {
+				background-color: #a9bab0;
+				border-radius: 50%;
+			}
+		}
+
+	}
+	.main-footer {
+		&::before {
+			content: "";
+			display: block;
+			height: 1px;
+			width: 95%;
+			background-color: #a9bab0;
+			position: absolute;
+			left: 2.5%;
+			bottom: 120px;
+		}
+	}
+}
